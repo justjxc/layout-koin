@@ -1,0 +1,142 @@
+.product {
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__column {
+    &--left {
+      width: 363px;
+    }
+
+    &--right {
+      width: 560px;
+    }
+  }
+
+  &__title {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #283337;
+  }
+
+  &__paragraph {
+    margin-top: 30px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #40494d;
+  }
+
+  &__button {
+    margin-top: 40px;
+    font-size: 18px;
+    width: 243px;
+
+    @extend %button;
+  }
+}
+
+.card {
+  padding: 80px;
+  background: #f3f7f4;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__img {
+    width: 90px;
+    height: 90px;
+  }
+
+  &__title {
+    margin-top: 27px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34px;
+    color: #283337;
+  }
+
+  &__paragraph {
+    margin-top: 51px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #40494d;
+  }
+
+  &__link {
+    margin-top: 38px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    color: #283337;
+    align-self: flex-end;
+
+    @extend %hoveredLink;
+  }
+}
+
+@media (max-width: 710px) {
+  .product {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__column {
+      &--left {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      &--right {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 40px;
+
+    &__img {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__paragraph {
+      margin-top: 30px;
+    }
+
+    &__link {
+      margin-top: 24px;
+    }
+  }
+}

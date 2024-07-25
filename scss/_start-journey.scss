@@ -1,0 +1,42 @@
+.start-journey {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #f3f7f4;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+  }
+
+  &__title {
+    max-width: 548px;
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #283337;
+  }
+
+  &__paragraph {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 36px;
+    text-align: center;
+    color: #283337;
+  }
+
+  &__button {
+    width: 218px;
+    height: 56px;
+
+    @extend %button;
+  }
+}

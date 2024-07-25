@@ -1,0 +1,45 @@
+.build-for {
+  padding-top: 150px;
+  height: 565px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #283337;
+  }
+
+  &__logos {
+    margin-top: 86px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 600px) {
+  .build-for {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    height: fit-content;
+
+    &__logos {
+      margin-top: 60px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+  }
+}
